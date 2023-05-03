@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .slide {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+
+  .slide h1 {
+    font-size: 48px;
+    color: #333;
+  }
+
+  .slide h2 {
+    font-size: 36px;
+    color: #333;
+  }
+
+  .slide p {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .slide ul {
+    list-style-type: none;
+  }
+
+  .slide li {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .slide table {
+    border-collapse: collapse;
+  }
+
+  .slide th, .slide td {
+    border: 1px solid #333;
+    padding: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .slide th {
+    background-color: #999;
+  }
+
+  /* Mejorar los estilos */
+
+  body {
+    font-family: Arial, sans-serif; /* Cambiar la fuente */
+  }
+
+  .container {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Añadir sombra al contenedor */
+  }
+
+  .slide:nth-child(odd) {
+    background-color: #e0e0e0; /* Alternar el color de fondo de los slides */
+  }
+
+  .slide h1, .slide h2 {
+    text-align: center; /* Centrar los títulos */
+  }
+
+  .slide ul, .slide ol {
+    margin-left: 20px; /* Añadir margen a las listas */
+  }
+
+  .slide table {
+    margin-left: auto; /* Centrar la tabla */
+    margin-right: auto; 
+  }
+
+  /* Añadir colores y animaciones */
+
+  :root {
+    --color-primary: #00a8ff; /* Definir un color primario */
+    --color-secondary: #f8f8f8; /* Definir un color secundario */
+  }
+
+  .container {
+    overflow-x: hidden; /* Ocultar el desbordamiento horizontal */
+  }
+
+  .slide {
+    position: relative; /* Posicionar los slides de forma relativa */
+    left: -100%; /* Mover los slides a la izquierda */
+    transition: left 1s ease-in-out; /* Añadir una transición suave al mover los slides */
+  }
+
+  .slide:first-child {
+    left: 0; /* Mostrar el primer slide */
+  }
+
+  .slide h1, .slide h2 {
+    color: var(--color-primary); /* Cambiar el color de los títulos al color primario */
+  }
+
+  .slide:nth-child(even) {
+    background-color: var(--color-secondary); /* Cambiar el color de fondo de los slides pares al color secundario */
+  }
+  
+   /* Añadir más estilos */
+
+   .container::before, .container::after {
+     content:"";
+     position:absolute; 
+     top:-10px; 
+     bottom:-10px; 
+     width:10px; 
+     background-color:#fff; 
+     box-shadow:-5px 0 5px rgba(0,0,0,0.1); 
+   } 
+
+   .container::before { 
+     left:-10px; 
+   } 
+
+   .container::after { 
+     right:-10px; 
+   } 
+
+   .slide::before { 
+     content:""; 
+     position:absolute; 
+     top:-10px; 
+     bottom:-10px; 
+     left:-10px; 
+     right:-10px; 
+     border-top-left-radius:

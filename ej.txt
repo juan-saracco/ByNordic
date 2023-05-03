@@ -1,0 +1,11 @@
+Sí, puedo intentar hacer que la página se vea más linda y actual. Aquí tienes un ejemplo:
+
+<html>
+<head>
+  <style>
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
