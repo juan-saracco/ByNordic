@@ -159,60 +159,68 @@ main{
 
 /* media query 2000px*/
 
-@media screen and (min-width: 2000px){
-    .navLi{
-        font-size: 3rem;
+
+
+@media  screen and (max-width: 1024px){
+
+    .carousel-inner {
+        height: 70vh;
     }
 
-    .gallery-title{
-        font-size: 3rem;
+    .gallery-3a {
+        justify-content: flex-start;
+        margin-top: 4rem;
     }
 
-    .card-text{
-        font-size: 2rem;
+    .gallery {
+        margin-bottom: 4rem;;
     }
 
-    .btn{
-        font-size: 2rem;
-    }
-
-    .gallery-img{
-        max-width: 80%;
-        max-height: 30vh;
-        object-fit: cover;
-        border-radius: 5px;
+    .card-text {
+        font-size: 1.3em;
     }
 
     .footer span{
-        font-size: 3em;
+        font-size: 1.5em;
     }
     
+    .btn{
+        font-size: 1.2em;
+    }
+
+    .gallery-title {
+        font-size: 2rem;
+    }
 }
+
 
 
 /* media query 768px*/
 
 @media screen and (max-width: 768px){
-    .navUl{
-        width: 10vw;
+    .nav{
+        min-height: 5vh;
+        max-height: 10vh;
     }
 
-    .navLi{
-        font-size: 1em;
+    .navImg{
+        width: 10%;
+        height: 10%;
     }
+
 
     .carousel-inner{
-        height: 31vh;
+        height: 60vh;
         min-height: 10rem;
     }
 
     .gallery{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 50vh);
-        grid-gap: 1rem;
+        grid-gap: 3rem;
         padding-right: 3rem;
         padding-left: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
     }
 
     .gallery-1{
@@ -235,11 +243,11 @@ main{
         grid-column: 1/2;
         grid-row: 3;
         position: relative;
-        top: 12rem;
-        margin-bottom: 3rem;
+        top: 14rem;
     }
 
     .gallery-4{
+        margin-top: 1rem;
         grid-column: 1/2;
         grid-row: 4;
     }
@@ -250,7 +258,7 @@ main{
     }
 
     .gallery-img{
-        max-width: 100%;
+        max-width: 80%;
         max-height: 30vh;
         object-fit: cover;
         border-radius: 5px;
@@ -258,5 +266,31 @@ main{
 
     .img3{
         margin-top: 0;
+    }
+
+    @media screen and (max-width: 500px){
+
+        .gallery{
+            grid-gap: 0rem;
+        }
+
+        .gallery-title{
+            font-size: 1.5em;
+        }
+
+        .carousel-inner {
+            height: 30vh;
+        }
+
+
+        .card-text{
+            font-size: 1em;
+        }
+
+        .gallery-3a {
+            top: 8rem;
+            margin-bottom: 0rem; 
+        }
+        
     }
 }
