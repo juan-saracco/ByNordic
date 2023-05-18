@@ -66,7 +66,7 @@ main{
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 50vh);
+    grid-template-rows: 1fr 50vh 1fr;
     grid-gap: 1rem;
     padding-right: 3rem;
     padding-left: 3rem;
@@ -79,6 +79,7 @@ main{
 
 .card-body{
    max-width: 80%;
+    margin-top: 1rem;
 }
 
 .card-text{
@@ -170,6 +171,7 @@ main{
     .gallery-3a {
         justify-content: flex-start;
         margin-top: 4rem;
+        grid-template-rows: 1fr 40vh 1fr;
     }
 
     .gallery {
@@ -216,7 +218,7 @@ main{
 
     .gallery{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 50vh);
+        grid-template-rows: repeat(5, 60vh);
         grid-gap: 3rem;
         padding-right: 3rem;
         padding-left: 3rem;
@@ -267,6 +269,7 @@ main{
     .img3{
         margin-top: 0;
     }
+
 
     @media screen and (max-width: 500px){
 
