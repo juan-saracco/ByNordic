@@ -14,9 +14,16 @@ main {
   min-height: 80vh;
 }
 
+.btn{
+  height: 4rem;
+  width: 10rem;
+  font-weight: 600;
+}
+
 .landing-img {
-  background-image: url("../img/PHOTO-2023-05-13-12-31-38.jpg");
-  height: 87vh;
+  background-image: url("../img/logo.png");
+  color: #f5f5f5;
+  height: 80vh;
   background-size: 100%;
   background-position-y: 40%;
   width: 100%;
